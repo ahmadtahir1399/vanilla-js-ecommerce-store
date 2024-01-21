@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce JavaScript Website</title>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="main.css" />
+    <!-- Javascript link -->
+  </head>
+  <body>
+    <!-- navbar Start -->
+
+    <nav class="navbar">
+      <div class="navbar-center">
+        <span>
+          <div class="nav-icon">
+            <i class="fas fa-bars nv"></i>
+          </div>
+        </span>
+        <img
+          class="un-select main-nav-img"
+          src="./images/logo.svg"
+          alt="store logo"
+        />
+        <div class="cart-btn">
+          <span class="nav-icon">
+            <i class="fas fa-cart-plus"></i>
+          </span>
+          <div class="cart-items"></div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar End -->
+    <!-- Hero section Start -->
+    <header class="hero">
+      <div class="banner">
+        <h1 class="banner-title">Furniture Colection</h1>
+        <a href="#products-down"
+          ><button class="banner-btn">Shop Now</button>
+        </a>
+      </div>
+    </header>
+    <!-- Hero section End -->
+    <!-- Product Section Start -->
+    <section class="section-products">
+      <div class="section-title">
+        <h2 class="h2-product-top">Our Products</h2>
+      </div>
+      <div id="products-down" class="products-center"></div>
+    </section>
+    <!-- Product Section End -->
+    <!-- Hidded Cart Section Start -->
+
+    <div class="cart-overlay">
+      <div class="cart">
+        <span class="close-cart">
+          <i class="fas fa-window-close"> </i>
+        </span>
+        <h2>Your Cart</h2>
+        <div class="cart-content">
+          <!-- cart item Start -->
+          <!-- <div class="cart-item"></div> -->
+          <!-- cart item End -->
+        </div>
+        <div class="cart-footer">
+          <h3>Your Total:$ <span class="cart-total">0</span></h3>
+          <button class="clear-cart banner-btn">Clear Cart</button>
+        </div>
+      </div>
+    </div>
+    <!-- Hidded Cart Section End -->
+    <script src="./app.js" defer></script>
+    <script src="./test.js" defer></script>
+  </body>
+</html>
